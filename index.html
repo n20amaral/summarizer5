@@ -30,31 +30,35 @@
 				<header>
 					<h1>Summarizer #5</h1>
 					<h2 style="font-size:1em;">Nuno Amaral @ #19_Bootcamp</h2>
-					<h3 style="font-size:1em;">&lt;academiadecodigo_&gt;</h3>
 				</header>
-				<img style="border:0; box-shadow: 0 0 0" src="http://www.academiadecodigo.org/assets/img/logo_footer.jpg" />
+                <br />
 				<p class="fragment fade-in">Follow me on your screen:
 					<a href="https://n20amaral.github.io/summarizer5">n20amaral.github.io/summarizer5</a>
-				</p>
-
-				<aside class="notes">Good morning everyone</aside>
+                </p>
+                <br />
+                <img style="border:0; box-shadow: 0 0 0" src="img/logoac.png" />
+				<aside class="notes">Good morning everyone follow me on your computers</aside>
 			</section>
 			<section>
-				<h2 style="color:red;">Bootcamp Day 5 Overview</h2>
-				<p>some shit happened</p>
+                <h3 style="color:red;">Bootcamp Day 5 Overview</h3>
+                <p class="fragment fade-in">Iterative vs Recursive Pseudocode</p>
+                <p class="fragment fade-in">Version Control Systems</p>
+                <p class="fragment fade-in">Git Hands On</p>
+                <aside class="notes">refer homeworks, summarizer, election, and lottery</aside>
 			</section>
 			<section>
 				<header>
-					<h2 style="color:red;">{Board Exercises}</h2>
+					<h3 style="color:red;">Iterative vs Recursive Pseudocode</h3>
 				</header>
 				<section>
-					<h3>Iterative Palindrome Pseudocode</h3>
-					<span class="fragment fade-in">
-						<span class="fragment fade-out">I'll fade in, then out</span>
-					</span>
+					<h4>isPalindrome() with Iterative Approach</h4>
+                    <img src="img/iterativepalindrome.jpg" />
+                    <aside class="notes">Explain the benefits of this pseudocode</aside>
 				</section>
 				<section>
-					<h3>Recursive Palindrome Pseudocode</h3>
+                    <h4>isPalindrome() with Recursive Approach</h4>
+                    <img src="img/recursivepalindrome.jpg" />
+                    <aside class="notes">DONT FORGET TO GO DOWN<br />Explain the benefits of this pseudocode</aside>
 				</section>
 			</section>
 			<section>
@@ -68,15 +72,20 @@
 					<h4 class="fragment fade-in">Why should we use it?</h4>
 					<small class="fragment fade-in">With a VCS it's possible to rollback to a previous version of a file and it's easier to solve conflicts when 2 or more
 						people are working in the same document.</small>
-					<aside class="notes">Brevly explain what is a VCS</aside>
+					<aside class="notes">Brevly explain what is a VCS.
+						<br/>
+                        <br /> How about no version control?
+                        <br />CLICK DOWN
+                    </aside>
+                        
 				</section>
 				<section>
-						<h4>No Version Control</h4>
-						<aside class="notes">How about no version control? How many of you lived a situation like this (next slide)</aside>
+					<h4>No Version Control</h4>
+					<aside class="notes">How many of you lived a situation like this (next slide)</aside>
 				</section>
 				<section>
-						<img alt="no-version-control" src="img/noversioncontrol.jpg" />
-						<aside class="notes">But some people insist asking: (next slide)</aside>
+					<img alt="no-version-control" src="img/noversioncontrol.jpg" />
+					<aside class="notes">But some people insist asking: (next slide)</aside>
 				</section>
 				<section>
 					<h4>What's wrong with not using version control?</h4>
@@ -85,24 +94,20 @@
 						<li class="fragment fade-in">Hard to track changes on files.</li>
 						<li class="fragment fade-in">Keeping every version of a file will consume much more storage space.</li>
 					</ul>
-					<aside class="notes">You will end with something like this picture</aside>
+					<aside class="notes">an these are some reasons that you should for start using a VCS</aside>
 				</section>
 				<section>
 					<h4>What kind of VCS system exists?</h4>
-					<ul style="font-size:0.8em;list-style: none;text-align: center;">
-						<li class="fragment fade-in">Local Data Model</li>
-						<li class="fragment fade-in">Client-Server Model</li>
-						<li class="fragment fade-in">Distributed Model</li>
-					</ul>
+					<img style="border:0;box-shadow: 0 0 0;" class="fragment fade-in" src="img/version-control-models.jpg" />
 					<aside class="notes">Refer the other names used in the slides</aside>
 				</section>
 				<section>
 					<h4>Local Data Model
-						<sup>VCS(aka File Locks)</sup>
+						<span style="font-size:0.5em;">(aka File Locks)</small>
 					</h4>
 					<ul style="font-size:0.8em;list-style: none;text-align: center;">
 						<li class="fragment fade-in">Require that everyone use the same filesystem</li>
-						<li class="fragment fade-in">In a shared envinroment the file will be locked when someone is using it, making the others wait to finish.</li>
+						<li class="fragment fade-in">Files will be locked when someone is using it, making the others wait to finish.</li>
 						<li class="fragment fade-in">Merging local copies of a file nees to be done manually.</li>
 					</ul>
 					<hr style="visibility: hidden" />
@@ -111,7 +116,8 @@
 				</section>
 				<section>
 					<h4>Client-Server VCS
-						<sup>(aka Centralized VCS)</sup>
+						<span style="font-size:0.5em;">(aka Centralized VCS)</small>
+							</sup>
 					</h4>
 					<ul style="font-size:0.8em;list-style: none;text-align: center;">
 						<li class="fragment fade-in">Require a connection to the central repository</li>
@@ -137,62 +143,147 @@
 			</section>
 			<section>
 				<header>
-					<h3 style="color:red;">Git</h3>
+					<h3 style="color:red;">Git Hands On</h3>
 				</header>
 				<section>
+					<img style="border:0; box-shadow: 0 0 0;" src="img/gitlogo.png" />
+					<br />
 					<small class="fragment fade-in">Created by Linus Torsvalds.</small>
 					<small class="fragment fade-in">Inspired on Bit Keeper.</small>
 					<small class="fragment fade-in">Described as "the stupid content tracker"</small>
 					<aside class="notes">"goddamn idiotic truckload of sh*t": when it breaks</aside>
 				</section>
 				<section>
-					<h4>Setup Functions</h4>
-					<ul style="font-size:0.8em;list-style: none;text-align: center;">
-						<li>git help</li>
-						<li>git config</li>
-						<li>git init</li>
-						<li>git status</li>
-						<li>git add</li>
-						<li>git commit</li>
+					<h4>Git Commands</h4>
+					<div class="fragment fade-in">
+						<pre><code>$ git version</code></pre>
+						<small>Shows the git version installed</small>
+					</div>
+					<div class="fragment fade-in">
+						<pre><code>$ git config</code></pre>
+						<small>Get and set repository or global options</small>
+					</div>
+					<div class="fragment fade-in">
+						<pre><code>$ git init</code></pre>
+						<small>Create an empty Git repository or reinitialize an existing one</small>
+					</div>
+					<aside class="notes">
+						to check if git is installed run git version<br />
+						<br />
+						with git config is possible to set user name and email or default editor
+					</aside>
+				</section>
+				<section>
+					<h4>Git Commands</h4>
+					<div class="fragment fade-in">
+						<pre><code>$ git add</code></pre>
+						<small>Add file contents to the index</small>
+					</div>
+					<div class="fragment fade-in">
+						<pre><code>$ git status</code></pre>
+						<small>Show the working tree status</small>
+					</div>
+					<div class="fragment fade-in">
+						<pre><code>$ git commit</code></pre>
+						<small>Record changes to the repository</small>
+					</div>
+					<aside class="notes">
+						with git add the new files are automatically set as staged
+					</aside>
+				</section>
+				<section>
+					<h4>Worflow</h4>
+					<ul style="font-size:0.8em; list-style-image: url('img/cdown.png')">
+						<li class="fragment fade-in">Initialize a repository<pre><code>git init</code></pre></li>
+						<li>Edit your files</li>
+						<li class="fragment fade-in">Stage your changed files<pre class="fragment fade-in"><code>git add</code></pre></li>
+						<li class="fragment fade-in">Review your changes<pre class="fragment fade-in"><code>git status</code></pre></li>
+						<li>Save changes<pre class="fragment fade-in"><code>git commit</code></pre></li>
 					</ul>
+					<aside class="notes">ask what each command should be</aside>
 				</section>
 				<section>
-					<h4>Git Worflow</h4>
-					git init
-					Edit files $EDITOR 
-					Group changes git add 
-					Review changes git status 
-					Save changes git commit
+					<img style="border:0;box-shadow: 0 0 0;" src="img/filelifecycle.jpg" />
+					<aside class="notes">simulate lifecycle</aside>
 				</section>
 				<section>
-					<h4>Git File Lifecycle</h4>
+					<h4>Other Git Commands</h4>
+					<div class="fragment fade-in">
+						<pre><code>$ git log</code></pre>
+						<small>Show commit logs</small>
+					</div>
+					<div class="fragment fade-in">
+						<pre><code>$ git rm</code></pre>
+						<small>Remove files from the working tree and from the index</small>
+					</div>
+					<div class="fragment fade-in">
+						<pre><code>$ git diff</code></pre>
+						<small>Show changes between commits, commit and working tree, etc</small>
+					</div>
+					<aside class="notes">other important commands but not all</aside>
 				</section>
 				<section>
-					<h2>Other Functions</h2>
-					<ul style="font-size:0.8em;list-style: none;text-align: center;">
-						<li>git log</li>
-						<li>git rm</li>
-						<li>git diff</li>
-						<li>git checkout</li>
-						<li>.gitignore</li>
-					</ul>
+						<h4>Other Git Commands</h4>
+						<div class="fragment fade-in">
+							<pre><code>$ git checkout</code></pre>
+							<small>Restore working tree files</small>
+						</div>
+						<div class="fragment fade-in">
+							<pre><code>$ git clone</code></pre>
+							<small>Clone a repository into a new directory</small>
+						</div>
+						<div class="fragment fade-in">
+							<pre><code>$ git help</code></pre>
+							<small>If you need an explanation for this, then you are in the wrong room.</small>
+						</div>
+						<aside class="notes">clone could also be done from a local repository</aside>
 				</section>
 				<section>
-					<h2>Working with remotes</h2>
-					<ul style="font-size:0.8em;list-style: none;text-align: center;">
-						<li>remote add</li>
-						<li>pull</li>
-						<li>push</li>
-					</ul>
+                    <img src="img/gitignore.gif">
+					<div class="fragment fade-in">
+                            <pre>.gitignore</pre>
+                            <small>A file that contains the files of files to always ignore</small>
+					</div>
+					<aside class="notes">who's know what feature i will talk now</aside>
+				</section>
+				<section>
+					<h4>Working with remotes</h2>
+                    <img src="img/tvremote.jpg" />
+                    <aside class="notes">working with remotes, not this ones, this is super advanced for you to understand how it works</aside>
+                </section>
+                <section>
+                    <h4>Working with remotes</h2>
+                    <img src="img/gitremote.png" />
+                    <aside class="notes">but this ones instead<br /><br />reinforce collaborative feature and many remotes possibility</aside>
+                </section>
+				<section>
+						<h4>Remote Git Commands</h4>
+						<div class="fragment fade-in">
+							<pre><code>$ git remote</code></pre>
+							<small>Manage set of tracked repositories</small>
+						</div>
+						<div class="fragment fade-in">
+							<pre><code>$ git pull</code></pre>
+							<small>Fetch from and integrate with another repository or a local branch</small>
+						</div>
+						<div class="fragment fade-in">
+							<pre><code>$ git push</code></pre>
+							<small>Update remote refs along with associated objects</small>
+						</div>
 				</section>
 			</section>
 			<section>
 				<header>
-					<h2>Final</h2>
+                    <h4>This subject will continue on another summarize...</h2>
+                    <div class="fragment fade-in" >
+                        <p class="color:red;">Bootcamp Day 5 highlight</p>
+                        <img src="img/highlightoftheday.gif" />
+                    </div>
 				</header>
 			</section>
 		</div>
 	</div>
+
 
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>

@@ -1,208 +1,225 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
-		<title>reveal.js</title>
-	
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
-	
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<!-- <link rel="stylesheet" href="summ5.css"> -->
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		</script>
-	</head>
-	
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-state="no-title-footer">
-					<header>
-						<h1>Summarizer 5</h1>
-						<h2 style="font-size:1em;">Nuno Amaral @ #19_Bootcamp</h2>
-						<h3 style="font-size:1em;">&lt;academiadecodigo_&gt;</h3>
-						<header>
-							<img style="border:0; box-shadow: 0 0 0" src="http://www.academiadecodigo.org/assets/img/logo_footer.jpg" />
-							<p class="fragment fade-in">Follow me on your screen:
-								<a href="https://n20amaral.github.io/summarizer5">n20amaral.github.io/summarizer5</a>
-							</p>
-	
-							<aside class="notes">Good morning everyone</aside>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- <link rel="stylesheet" href="summ5.css"> -->
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<header>
+					<h1>Summarizer #5</h1>
+					<h2 style="font-size:1em;">Nuno Amaral @ #19_Bootcamp</h2>
+					<h3 style="font-size:1em;">&lt;academiadecodigo_&gt;</h3>
+				</header>
+				<img style="border:0; box-shadow: 0 0 0" src="http://www.academiadecodigo.org/assets/img/logo_footer.jpg" />
+				<p class="fragment fade-in">Follow me on your screen:
+					<a href="https://n20amaral.github.io/summarizer5">n20amaral.github.io/summarizer5</a>
+				</p>
+
+				<aside class="notes">Good morning everyone</aside>
+			</section>
+			<section>
+				<h2 style="color:red;">Bootcamp Day 5 Overview</h2>
+				<p>some shit happened</p>
+			</section>
+			<section>
+				<header>
+					<h2 style="color:red;">{Board Exercises}</h2>
+				</header>
+				<section>
+					<h3>Iterative Palindrome Pseudocode</h3>
+					<span class="fragment fade-in">
+						<span class="fragment fade-out">I'll fade in, then out</span>
+					</span>
 				</section>
 				<section>
-					<h2>Bootcamp Day 5 Overview</h2>
-	
-	
-	
+					<h3>Recursive Palindrome Pseudocode</h3>
+				</section>
+			</section>
+			<section>
+				<header>
+					<h3 style="color:red;">Version Control Systems (VCS)</h3>
+				</header>
+				<section>
+					<h4 class="fragment fade-in">What is it?</h4>
+					<small class="fragment fade-in">It's a system that tracks file changes and manages collaborative work on a project.</small>
+					<hr style="visibility: hidden" />
+					<h4 class="fragment fade-in">Why should we use it?</h4>
+					<small class="fragment fade-in">With a VCS it's possible to rollback to a previous version of a file and it's easier to solve conflicts when 2 or more
+						people are working in the same document.</small>
+					<aside class="notes">Brevly explain what is a VCS</aside>
 				</section>
 				<section>
-					<header>
-						<h2>{Board Exercises}</h2>
-					</header>
-					<section>
-						<h3>Iterative Palindrome Pseudocode</h3>
-						<span class="fragment fade-in">
-							<span class="fragment fade-out">I'll fade in, then out</span>
-						</span>
-					</section>
-					<section>
-						<h3>Recursive Palindrome Pseudocode</h3>
-					</section>
-				</section>
-				<section>
-					<header>
-						<h3>Version Control Systems (VCS)</h3>
-					</header>
-					<section>
-						<h4 class="fragment fade-in">What is it?</h4>
-						<small class="fragment fade-in">It's a system that tracks file changes and manages collaborative work on a project.</small>
-						<hr style="visibility: hidden" />
-						<h4 class="fragment fade-in">Why should we use it?</h4>
-						<small class="fragment fade-in">With a VCS it's possible to rollback to a previous version of a file and it's easier to solve conflicts when 2 or more
-							people are working in the same document.</small>
-						<aside class="notes">Brevly explain what is a VCS</aside>
-					</section>
-					<section>
 						<h4>No Version Control</h4>
-						<h4 class="fragment fade-in">What's wrong with not using version control?</h4>
-						<small class="fragment fade-in">It's not collaborative work-friendly.</small>
-						<small class="fragment fade-in">Hard to track changes on files.</small>
-						<small class="fragment fade-in">Keeping every version of a file will consume much more storage space.</small>
-						<img alt="file-version-mess">
-						<aside class="notes">You will end with something like this picture</aside>
-					</section>
-					<section>
-						<h4>What kind of VCS system exists?</h4>
-						<small class="fragment fade-in">Local Data Model</small>
-						<small class="fragment fade-in">Client-Server Model</small>
-						<small class="fragment fade-in">Distributed Model</small>
-						<aside class="notes">Refer the other names used in the slides</aside>
-					</section>
-					<section>
-						<h4>Local Data Model
-							<small>VCS(aka File Locks)</small>
-						</h4>
-						<small class="fragment fade-in">Require that everyone use the same filesystem</small>
-						<small class="fragment fade-in">In a shared envinroment the file will be locked when someone is using it, making the others wait to finish.</small>
-						<small class="fragment fade-in">Merging local copies of a file nees to be done manually.</small>
-						<hr style="visibility: hidden" />
-						<small class="fragment fade-in">Examples:RCS, SCCS</small>
-						<aside class="notes">reinforce the struggle</aside>
-					</section>
-					<section>
-						<h4>Client-Server VCS
-							<small>(aka Centralized VCS)</small>
-						</h4>
-						<small class="fragment fade-in">Require a connection to the central repository</small>
-						<small class="fragment fade-in">Needs to solve merge conflicts before commit a file.</small>
-						<small class="fragment fade-in">Offline and remote development it's hard to manage</small>
-						<hr style="visibility: hidden" />
-						<small class="fragment fade-in">Examples: Subversion, CVS, TFS (proprietary)</small>
-						<aside class="notes">Talk about personal experience with subversion</aside>
-					</section>
-					<section>
-						<h4>Distributed VCS</h4>
-						<ul style="font-size:0.8em;list-style: none;text-align: center;">
-							<li class="fragment fade-in">Does not require a central repository</li>
-							<li class="fragment fade-in">Commits are made to local repository and can be pushed/pulles to/from a remote repository</li>
-							<li class="fragment fade-in">Can be connected to multiple remote repositories.</li>
-							<li class="fragment fade-in">Offline and remote development friendly</li>
-						</ul>
-						<hr style="visibility: hidden" />
-						<small class="fragment fade-in">Examples: Git, Mercurial, VSTS (proprietary)</small>
-						<aside class="notes">note that VSTS uses git also</aside>
-					</section>
-				</section>
-	
-				<section>
-					<header style="color:red;">
-						<h2 style="text-align: left;">Git</h2>
-					</header>
-					<section>
-						<small class="fragment fade-in">Created by Linus Torsvalds.</small>
-						<small class="fragment fade-in">Inspired on Bit Keeper</small>
-						<small class="fragment fade-in">Described as "the stupid content tracker"</small>
-						<aside class="notes">"goddamn idiotic truckload of sh*t": when it breaks</aside>
-					</section>
-					<section>
-						<h3>Git Hands On</h3>
-						<h4>Setup</h4>
-						<ul>
-							<li>config</li>
-							<li>help</li>
-							<li>init</li>
-							<li>Status</li>
-							<li>add</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Git File Lifecycle</h2>
-					</section>
-					<section>
-						<h2>Second Hands On</h2>
-						<ul>
-							<li>add</li>
-							<li>commit</li>
-							<li>modify</li>
-							<li>stage</li>
-							<li>remove</li>
-							<li>ignoring</li>
-							<li>log</li>
-							<li>diff</li>
-							<li>checkout</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Working with remotes</h2>
-						<ul>
-							<li>remote add</li>
-							<li>pull</li>
-							<li>push</li>
-						</ul>
-					</section>
+						<aside class="notes">How about no version control? How many of you lived a situation like this (next slide)</aside>
 				</section>
 				<section>
-					<header>
-						<h2>Final</h2>
-					</header>
+						<img alt="no-version-control" src="img/noversioncontrol.jpg" />
+						<aside class="notes">But some people insist asking: (next slide)</aside>
 				</section>
-			</div>
+				<section>
+					<h4>What's wrong with not using version control?</h4>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li class="fragment fade-in">It's not collaborative work-friendly.</li>
+						<li class="fragment fade-in">Hard to track changes on files.</li>
+						<li class="fragment fade-in">Keeping every version of a file will consume much more storage space.</li>
+					</ul>
+					<aside class="notes">You will end with something like this picture</aside>
+				</section>
+				<section>
+					<h4>What kind of VCS system exists?</h4>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li class="fragment fade-in">Local Data Model</li>
+						<li class="fragment fade-in">Client-Server Model</li>
+						<li class="fragment fade-in">Distributed Model</li>
+					</ul>
+					<aside class="notes">Refer the other names used in the slides</aside>
+				</section>
+				<section>
+					<h4>Local Data Model
+						<sup>VCS(aka File Locks)</sup>
+					</h4>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li class="fragment fade-in">Require that everyone use the same filesystem</li>
+						<li class="fragment fade-in">In a shared envinroment the file will be locked when someone is using it, making the others wait to finish.</li>
+						<li class="fragment fade-in">Merging local copies of a file nees to be done manually.</li>
+					</ul>
+					<hr style="visibility: hidden" />
+					<small class="fragment fade-in">Examples: RCS, SCCS</small>
+					<aside class="notes">reinforce the struggle with this system</aside>
+				</section>
+				<section>
+					<h4>Client-Server VCS
+						<sup>(aka Centralized VCS)</sup>
+					</h4>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li class="fragment fade-in">Require a connection to the central repository</li>
+						<li class="fragment fade-in">Needs to solve merge conflicts before commit a file.</li>
+						<li class="fragment fade-in">Offline and remote development it's hard to manage</li>
+					</ul>
+					<hr style="visibility: hidden" />
+					<small class="fragment fade-in">Examples: Subversion, CVS, TFS (proprietary)</small>
+					<aside class="notes">Talk about personal experience with subversion</aside>
+				</section>
+				<section>
+					<h4>Distributed VCS</h4>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li class="fragment fade-in">Does not require a central repository</li>
+						<li class="fragment fade-in">Commits are made to local repository and can be pushed/pulles to/from a remote repository</li>
+						<li class="fragment fade-in">Can be connected to multiple remote repositories.</li>
+						<li class="fragment fade-in">Offline and remote development friendly</li>
+					</ul>
+					<hr style="visibility: hidden" />
+					<small class="fragment fade-in">Examples: Git, Mercurial, VSTS (proprietary)</small>
+					<aside class="notes">note that VSTS can also use git</aside>
+				</section>
+			</section>
+			<section>
+				<header>
+					<h3 style="color:red;">Git</h3>
+				</header>
+				<section>
+					<small class="fragment fade-in">Created by Linus Torsvalds.</small>
+					<small class="fragment fade-in">Inspired on Bit Keeper.</small>
+					<small class="fragment fade-in">Described as "the stupid content tracker"</small>
+					<aside class="notes">"goddamn idiotic truckload of sh*t": when it breaks</aside>
+				</section>
+				<section>
+					<h4>Setup Functions</h4>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li>git help</li>
+						<li>git config</li>
+						<li>git init</li>
+						<li>git status</li>
+						<li>git add</li>
+						<li>git commit</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Git Worflow</h4>
+					git init
+					Edit files $EDITOR 
+					Group changes git add 
+					Review changes git status 
+					Save changes git commit
+				</section>
+				<section>
+					<h4>Git File Lifecycle</h4>
+				</section>
+				<section>
+					<h2>Other Functions</h2>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li>git log</li>
+						<li>git rm</li>
+						<li>git diff</li>
+						<li>git checkout</li>
+						<li>.gitignore</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Working with remotes</h2>
+					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+						<li>remote add</li>
+						<li>pull</li>
+						<li>push</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<header>
+					<h2>Final</h2>
+				</header>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				controls: false,
-				keyboard: false,
-				multiplex: {
-					// Example values. To generate your own, see the socket.io server instructions.
-					secret: null, // null so the clients do not have control of the master presentation
-					id: 'b6ace366fc42c743', // id, obtained from socket.io server
-					url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
-				},
-				dependencies: [
-					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js', async: true },
-					{ src: 'plugin/multiplex/client.js', async: true },
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					//{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			controls: false,
+			keyboard: false,
+			multiplex: {
+				// Example values. To generate your own, see the socket.io server instructions.
+				secret: null, // null so the clients do not have control of the master presentation
+				id: 'b6ace366fc42c743', // id, obtained from socket.io server
+				url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+			},
+			dependencies: [
+				{ src: 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js', async: true },
+				{ src: 'plugin/multiplex/client.js', async: true },
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				//{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>

@@ -57,19 +57,47 @@
 				</section>
 				<section>
 					<header>
-						<h2>Version Control Systems (VCS)</h2>
+						<h3>Version Control Systems (VCS)</h3>
 					</header>
 					<section>
-						<h3>What? Why? How?</h3>
+						<h4 class="fragment fade-in">What is it?</h4>
+						<small class="fragment fade-in">It's a system that tracks file changes and manages collaborative work on a project.</small>
+						<hr style="visibility: hidden" />
+						<h4 class="fragment fade-in">Why should we use it?</h4>
+						<small class="fragment fade-in">With a VCS it's possible to rollback to a previous version of a file and it's easier to solve conflicts when 2 or more people are working in the same document.</small>
+						<aside class="notes">Brevly explain what isa VCS</aside>
 					</section>
 					<section>
-						<h3>What's the problem with not using version control?</h3>
+						<h4>No Version Control</h4>
+						<h4 class="fragment fade-in">What's wrong with not using version control?</h4>
+						<small class="fragment fade-in">Keep every version of a file will consume much more storage space.</small>
+						<small class="fragment fade-in">In a shared envinroment the file will be locked when someone is using it, making the others wait to finish.</small>
+						<small class="fragment fade-in">Merging local copies of a file manually will be a pain in the ass...</small>
+						<img alt="file-version-mess">
+						<aside class="notes">Simulate a no version control scenario</aside>
 					</section>
 					<section>
-						<h3>Centralized VCS)</h3>
+						<h4>Centralized VCS</h4>
+						<ul style="font-size:0.8em;list-style: none;text-align: center;">
+							<li class="fragment fade-in">Require a connection to the central repository</li>
+							<li class="fragment fade-in">Needs to solve merge conflicts before commit a file.</li>
+							<li class="fragment fade-in">Offline and remote development it's hard to manage</li>
+						</ul>
+						<hr style="visibility: hidden" />
+						<small class="fragment fade-in">Examples of CVCS: Subversion, CVS, Sourcesafe</small>
+						<aside class="notes">Talk about personal experience</aside>
 					</section>
 					<section>
-						<h3>Distributed VCS</h3>
+						<h4>Distributed VCS</h4>
+						<ul style="font-size:0.8em;list-style: none;text-align: center;">
+							<li class="fragment fade-in">Does not require a central repository</li>
+							<li class="fragment fade-in">Commits are made to local repository and all commits can be pushed to a remote repository</li>
+							<li class="fragment fade-in">Can be connected to multiple remote repositories.</li>
+							<li class="fragment fade-in">Offline and remote development friendly</li>
+						</ul>
+						<hr style="visibility: hidden" />
+						<small class="fragment fade-in">Examples of DVCS: Git, TFS, Mercurial</small>
+						<aside class="notes"></aside>
 					</section>
 
 				</section>
@@ -82,7 +110,7 @@
 						<h3>First Hands On</h3>
 						<h4>Setup</h4>
 						<ul>
-							<li>version</li>
+							<pr>
 							<li>config</li>
 							<li>help</li>
 							<li>init</li>

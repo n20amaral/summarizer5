@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>Summarizer #5 Nuno Amaral</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/white.css">
@@ -44,7 +44,7 @@
                 <p class="fragment fade-in">Iterative vs Recursive Pseudocode</p>
                 <p class="fragment fade-in">Version Control Systems</p>
                 <p class="fragment fade-in">Git Hands On</p>
-                <aside class="notes">refer homeworks, summarizer, election, and lottery</aside>
+                <aside class="notes">refer homeworks, summarizer, election, and lottery<br />Reference to ruben first lecture</aside>
 			</section>
 			<section>
 				<header>
@@ -53,12 +53,12 @@
 				<section>
 					<h4>isPalindrome() with Iterative Approach</h4>
                     <img src="img/iterativepalindrome.jpg" />
-                    <aside class="notes">Explain the benefits of this pseudocode</aside>
+                    <aside class="notes">DONT FORGET TO GO DOWN<br />Explain this pseudocode</aside>
 				</section>
 				<section>
                     <h4>isPalindrome() with Recursive Approach</h4>
                     <img src="img/recursivepalindrome.jpg" />
-                    <aside class="notes">DONT FORGET TO GO DOWN<br />Explain the benefits of this pseudocode</aside>
+                    <aside class="notes">Explain this pseudocode</aside>
 				</section>
 			</section>
 			<section>
@@ -103,40 +103,40 @@
 				</section>
 				<section>
 					<h4>Local Data Model
-						<span style="font-size:0.5em;">(aka File Locks)</small>
+						<span style="font-size:0.5em;">(aka File Locks)</span>
 					</h4>
-					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+					<img src="img/localmodel.jpg" />
+					<ul style="font-size:0.6em;list-style: none;text-align: center;">
 						<li class="fragment fade-in">Require that everyone use the same filesystem</li>
 						<li class="fragment fade-in">Files will be locked when someone is using it, making the others wait to finish.</li>
 						<li class="fragment fade-in">Merging local copies of a file nees to be done manually.</li>
 					</ul>
-					<hr style="visibility: hidden" />
 					<small class="fragment fade-in">Examples: RCS, SCCS</small>
 					<aside class="notes">reinforce the struggle with this system</aside>
 				</section>
 				<section>
 					<h4>Client-Server VCS
-						<span style="font-size:0.5em;">(aka Centralized VCS)</small>
-							</sup>
+						<span style="font-size:0.5em;">(aka Centralized VCS)</span>
 					</h4>
-					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+					<img src="img/clientservermodel.jpg" />
+					<br />
+					<ul style="font-size:0.6em;list-style: none;text-align: center;">
 						<li class="fragment fade-in">Require a connection to the central repository</li>
 						<li class="fragment fade-in">Needs to solve merge conflicts before commit a file.</li>
 						<li class="fragment fade-in">Offline and remote development it's hard to manage</li>
 					</ul>
-					<hr style="visibility: hidden" />
 					<small class="fragment fade-in">Examples: Subversion, CVS, TFS (proprietary)</small>
 					<aside class="notes">Talk about personal experience with subversion</aside>
 				</section>
 				<section>
 					<h4>Distributed VCS</h4>
-					<ul style="font-size:0.8em;list-style: none;text-align: center;">
+					<img src="img/distributedmodel.jpg" />
+					<ul style="font-size:0.6em;list-style: none;text-align: center;">
 						<li class="fragment fade-in">Does not require a central repository</li>
-						<li class="fragment fade-in">Commits are made to local repository and can be pushed/pulles to/from a remote repository</li>
+						<li class="fragment fade-in">Commits to local repository and pushed/pulled to/from a remote repository</li>
 						<li class="fragment fade-in">Can be connected to multiple remote repositories.</li>
 						<li class="fragment fade-in">Offline and remote development friendly</li>
 					</ul>
-					<hr style="visibility: hidden" />
 					<small class="fragment fade-in">Examples: Git, Mercurial, VSTS (proprietary)</small>
 					<aside class="notes">note that VSTS can also use git</aside>
 				</section>
@@ -194,11 +194,11 @@
 				<section>
 					<h4>Worflow</h4>
 					<ul style="font-size:0.8em; list-style-image: url('img/cdown.png')">
-						<li class="fragment fade-in">Initialize a repository<pre><code>git init</code></pre></li>
+						<li class="fragment fade-in">Initialize a repository<pre><code>$ git init</code></pre></li>
 						<li>Edit your files</li>
-						<li class="fragment fade-in">Stage your changed files<pre class="fragment fade-in"><code>git add</code></pre></li>
-						<li class="fragment fade-in">Review your changes<pre class="fragment fade-in"><code>git status</code></pre></li>
-						<li>Save changes<pre class="fragment fade-in"><code>git commit</code></pre></li>
+						<li class="fragment fade-in">Stage your changed files<pre class="fragment fade-in"><code>$ git add</code></pre></li>
+						<li class="fragment fade-in">Review your changes<pre class="fragment fade-in"><code>$ git status</code></pre></li>
+						<li>Save changes<pre class="fragment fade-in"><code>$ git commit</code></pre></li>
 					</ul>
 					<aside class="notes">ask what each command should be</aside>
 				</section>
@@ -275,10 +275,10 @@
 			<section>
 				<header>
                     <h4>This subject will continue on another summarize...</h2>
-                    <div class="fragment fade-in" >
-                        <p class="color:red;">Bootcamp Day 5 highlight</p>
-                        <img src="img/highlightoftheday.gif" />
-                    </div>
+						<p class="fragment fade-in" class="color:red;">Bootcamp day 5 highlight</p>
+						<img class="fragment fade-in" src="img/highlightoftheday.gif" />
+						<pre class="fragment fade-in"><code>$ git commit -m "summarizer final"
+$ git push</code></pre>
 				</header>
 			</section>
 		</div>
